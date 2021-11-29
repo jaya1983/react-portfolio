@@ -1,21 +1,34 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'jquery/dist/jquery.min.js'
-import 'bootstrap/dist/js/bootstrap.min.js'
-import About from './components/About';
-import Nav from './components/Nav';
-import './App.css';
+import React, { useState } from "react";
+import Header from "./components/Header";
+import Nav from "./components/Nav";
+import Page from "./components/Page";
+import Footer from "./components/Footer";
 
 function App() {
-  return (
-    <div className="App">
-      <Nav>
-        </Nav>
-      <main>
-        <About></About>
-      </main>
-    </div>
-  );
+    const [pages] = useState([
+        { name: "about me" },
+        { name: "portfolio" },
+        { name: "contact" },
+        { name: "resume" }
+    ]);
+
+    const [currentPage, setCurrentPage] = useState(pages[0]);
+
+    return (
+        <div>
+            <Header>
+                <Nav
+                    pages={pages}
+                    setCurrentPage={setCurrentPage}
+                    currentPage={currentPage}
+                ></Nav>
+            </Header>
+            <main>
+                <Page currentPage={currentPage}></Page>
+            </main>
+            <Footer />
+        </div>
+    );
 }
 
 export default App;

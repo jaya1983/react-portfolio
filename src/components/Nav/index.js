@@ -1,42 +1,45 @@
-import React from "react";
-import { Navbar, Jumbotron, Button } from 'react-bootstrap';
+import React, { useEffect } from 'react';
+import { capitalizeFirstLetter } from '../../utils/helpers';
 
-function Nav() {
-  return (
-    <header>
-      <h2>
-        <a href="/"></a>
-      </h2>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <div className ="float-left navbar-nav flex-row" id="custom-nav">Jaya Gudipalli 
+function Nav(props) {
+    const {
+        pages = [],
+        setCurrentPage,
+        currentPage,
+    } = props;
+
+    useEffect(() => {
+        document.title = capitalizeFirstLetter(currentPage.name);
+    }, [currentPage]);
+
+    return (
+        <nav className="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div className="container">
+                <a className="navbar-brand js-scroll-trigger">Sylvia Prabudy</a>
+                <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarResponsive">
+                    <ul className="navbar-nav ml-auto">
+                        {pages.map((Page) => (
+                            <li
+                                className={`nav-item nav-link js-scroll-trigger ${
+                                    currentPage.name === Page.name && 'active'
+                                    }`}
+                                key={Page.name}
+                            >
+                                <span
+                                    onClick={() => setCurrentPage(Page)}
+                                >
+                                    {capitalizeFirstLetter(Page.name)}
+                                </span>
+                            </li>
+                        ))}
+                    </ul>
                 </div>
-        <div className="collapse navbar-collapse flex-row" id="custom-tabs">
-          <ul className="navbar-nav">
-            <li className="nav-item active">
-              <a className="nav-link" href="#">
-                About Me 
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Portfolio
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Contact
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Resume
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-  );
+            </div>
+        </nav>
+    );
 }
 
 export default Nav;
