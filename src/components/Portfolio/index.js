@@ -11,82 +11,52 @@ function Portfolio() {
     const [currentPage] = useState(pages[0]);
     const [projects] = useState([
         {
-            name: 'git-cookin',
+            name: 'take-my-recipe',
             description: 'MySQL/Express/Handlebars/SASS',
-            link: "http://git-cookin.herokuapp.com/",
-            repo: "https://github.com/sylviaprabudy/git-cookin"
+            link: "https://take-my-recipe.herokuapp.com/",
+            repo: "https://github.com/jaya1983/TakeMyRecipe"
         },
         {
-            name: 'covid-traveling',
+            name: 'book-lovers',
             description: 'JQuery/API/Materialize',
-            link: "https://sylviaprabudy.github.io/covid-traveling/",
-            repo: "https://github.com/sylviaprabudy/covid-traveling"
+            link: "https://jaya1983.github.io/book-lovers/",
+            repo: "https://github.com/jaya1983/book-lovers"
         },
-        {
-            name: 'br-for-java',
-            description: 'MERN Stack',
-            link: "https://br-for-java.herokuapp.com/",
-            repo: "https://github.com/sylviaprabudy/br-for-java"
-        },
-        {
-            name: 'run-buddy',
+              {
+            name: 'budget-tracker',
             description: 'HTML/CSS',
-            link: "https://sylviaprabudy.github.io/run-buddy/",
-            repo: "https://github.com/sylviaprabudy/run-buddy"
-        },
-        {
-            name: 'tech-blog',
-            description: 'Node/MySQL/Sequalize',
-            link: "https://tech-blog-0107.herokuapp.com/",
-            repo: "https://github.com/sylviaprabudy/tech-blog"
+            link: "https://cryptic-crag-86890.herokuapp.com/",
+            repo: "https://github.com/jaya1983/budget-tracker"
         },
         {
             name: 'weather-dashboard',
             description: 'JavaScript/API/Bootstrap',
-            link: "https://sylviaprabudy.github.io/weather-dashboard/",
-            repo: "https://github.com/sylviaprabudy/weather-dashboard"
-        },
-        {
-            name: 'food-festival',
-            description: 'JS/Node/PWA',
-            link: "https://sylviaprabudy.github.io/food-festival/",
-            repo: "https://github.com/sylviaprabudy/food-festival"
+            link: "https://jaya1983.github.io/weather-dashboard/",
+            repo: "https://github.com/jaya1983/weather-dashboard"
         },
         {
             name: 'code-quiz',
             description: 'JavaScript/JQuery/CSS',
-            link: "https://sylviaprabudy.github.io/timed-code-quiz/",
-            repo: "https://github.com/sylviaprabudy/timed-code-quiz"
+            link: "https://jaya1983.github.io/quiz/",
+            repo: "https://github.com/jaya1983/quiz"
         },
         {
             name: 'password-generator',
             description: 'HTML/CSS/JavaScript',
-            link: "https://sylviaprabudy.github.io/password-generator/",
-            repo: "https://github.com/sylviaprabudy/password-generator"
+            link: "https://jaya1983.github.io/PasswordGenerator/",
+            repo: "https://github.com/jaya1983/PasswordGenerator"
         },
         {
             name: 'note-taker',
             description: 'Node/Express/Bootstrap',
-            link: "http://note-taker-90210.herokuapp.com/",
-            repo: "https://github.com/sylviaprabudy/note-taker"
+            link: "https://radiant-taiga-33286.herokuapp.com/notes",
+            repo: "https://github.com/jaya1983/note-taker"
         },
         {
             name: 'work-day-scheduler',
             description: 'HTML/CSS/JavaScript',
-            link: "https://sylviaprabudy.github.io/work-day-scheduler/",
-            repo: "https://github.com/sylviaprabudy/work-day-scheduler"
-        },
-        {
-            name: 'taskmaster-pro',
-            description: 'HTML/CSS/JavaScript',
-            link: "https://sylviaprabudy.github.io/taskmaster-pro/",
-            repo: "https://github.com/sylviaprabudy/taskmaster-pro"
-        },
-        {
-            name: 'git-it-done',
-            description: 'HTML/Bootstrap/JavaScript',
-            link: "https://sylviaprabudy.github.io/git-it-done/",
-            repo: "https://github.com/sylviaprabudy/git-it-done"
+            link: "https://jaya1983.github.io/workday-scheduler/",
+            repo: "https://github.com/jaya1983/workday-scheduler"
         }
     ]);
 
