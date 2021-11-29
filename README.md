@@ -1,10 +1,9 @@
-# React-Portfolio
 
 A portfolio site using React Single Page Application. 
 
-### Github : https://github.com/sylviaprabudy/portfolio
+### Github : https://github.com/jaya1983/react-portfolio
 
-### Deployed site : https://sylviaprabudy.github.io/portfolio
+### Deployed site : https://jaya1983.github.io/react-portfolio/
 
 ## Description
 A portfolio site using React.js Single Page Application to showcase the projects that I have done in this bootcamp.
@@ -18,11 +17,6 @@ A portfolio site using React.js Single Page Application to showcase the projects
 - Displaying my skills on Resume. Users are be able to download a PDF version of my resume.
 
 
-## Screenshots
-![](src/assets/img/Portfolio-Desktop.gif)
-![](src/assets/img/Portfolio-Mobile.gif)
-
-
 ## Technologies Use
 <p><a href="https://reactjs.org/">React</a></p>
 <p><a href="https://nodejs.org/">Node.js</a></p>
@@ -31,5 +25,5 @@ A portfolio site using React.js Single Page Application to showcase the projects
 
 
 ## Contributor:
-Sylvia Prabudy ©2020 All Rights Reserved.
+Jaya Gudipalli ©2021 All Rights Reserved.
 - - -
