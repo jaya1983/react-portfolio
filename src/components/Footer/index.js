@@ -5,17 +5,13 @@ function Footer() {
     const icons = [
         {
             name: "fab fa-github",
-            link: "https://github.com/sylviaprabudy"
+            link: "https://github.com/jaya1983"
         },
         {
             name: "fab fa-linkedin",
-            link: "https://www.linkedin.com/public-profile/in/sylvia-prabudy-62984153"
+            link: "https://www.linkedin.com/in/jaya-gudipalli-44aaba52/"
         },
-        {
-            name: "fab fa-stack-overflow",
-            link: "https://stackoverflow.com/users/13452330/sylvia-prabudy"
-        }
-    ]
+        ]
 
     return (
         <section>
